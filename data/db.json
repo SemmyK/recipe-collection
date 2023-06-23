@@ -1,0 +1,217 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Veggie Stew",
+      "ingredients": [
+        "1 Carrot",
+        "1 Leek",
+        "200g Tofu",
+        "300ml Veg stock"
+      ],
+      "method": " Pre-heat the oven to 200C/3C/gas  Place the carrot, leek and tofu in a large bowl. Add the stock and mix well. Add the rest of the ingredients and mix well.  Place the mixture in a large bowl and cover with a lid. Place the lid on the oven and cook for 40 minutes.  Serve with a slaw of your choice",
+      "cookingTime": "45 minutes"
+    },
+    {
+      "id": "2",
+      "title": "Veggie Pizza",
+      "ingredients": [
+        "1 Base",
+        "Tomata pasata",
+        "1 Green pepper",
+        "100g Mushrooms"
+      ],
+      "method": " Pre-heat the oven to 200C/3C/gas.  Add the pasata, green pepper and mushrooms to the base. Place the lid on the oven and cook for 30 minutes. Serve with a slaw of your choice",
+      "cookingTime": "35 minutes"
+    },
+    {
+      "id": "3",
+      "title": "Greek Salad",
+      "ingredients": [
+        "1 Onion",
+        "1 Block of Feta",
+        "16 Kalamata olives",
+        "4 large vine tomatoes",
+        "4 tbsp olive oil",
+        "1 cucumber",
+        "1 tsp oregano"
+      ],
+      "method": "Cut all vegetables - onions in thin slices, tomatoes in vedges. Place tomatoes, 1 peeled, deseeded and chopped cucumber, red onion, 16 Kalamata olives, 1 tsp dried oregano, feta cheese chunks and 4 tbsp Greek extra virgin olive oil in a large bowl. Lightly season. Serve with crusty bread to mop up all of the juices",
+      "cookingTime": "35 minutes"
+    },
+    {
+      "id": "4",
+      "title": "Lemon Herb Chicken",
+      "ingredients": [
+        "2 Chicken breast",
+        "1 Lemon",
+        "Oregano",
+        "Olive Oil"
+      ],
+      "method": "Place chicken in a bowl; pour 1/2 of the lemon juice over chicken and season with salt.Heat olive oil in a medium skillet over medium-low heat. Place chicken into hot oil. Add remaining lemon juice and oregano; season with black pepper. Cook chicken until golden brown and the juices run clear, 5 to 10 minutes per side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C)",
+      "cookingTime": "25 minutes"
+    },
+    {
+      "title": "Stir-Fry Chicken and Vegetables",
+      "cookingTime": "40 minutes",
+      "method": "Mix chicken, soy sauce, sherry, and cornstarch together in a large bowl. Heat 1 tablespoon vegetable oil in a large skillet or wok over medium-high heat; cook and stir zucchini, bell pepper, broccoli, and garlic for 2 to 3 minutes. Add chicken broth, cover, and simmer until vegetables are tender, 4 to 5 minutes. Transfer vegetables and sauce to a large bowl and wipe the skillet clean. Heat remaining 1 tablespoon vegetable oil over medium-high heat; cook and stir chicken until meat is no longer pink in the center, about 5 minutes. Stir in vegetables; continue to cook and stir for 2 to 3 minutes more. Sprinkle with green onions. Enjoy your meal!",
+      "ingredients": [
+        "6 ounces skinless, boneless chicken breast",
+        "2 tablespoons soy sauce",
+        "2 tablespoons dry sherry",
+        "1 tablespoon cornstarch",
+        "1 zucchini",
+        "1 green bell pepper",
+        "1 cup broccoli florets",
+        "3 cloves garlic",
+        "½ cup chicken broth",
+        "6 green onions"
+      ],
+      "id": "KH1JZTa"
+    },
+    {
+      "title": "Quick and Easy Chicken Piquant",
+      "cookingTime": "25 minutes",
+      "method": "Mix flour and Creole seasoning together in a shallow bowl. Dredge chicken through the flour mixture, shaking of excess. Heat oil in a skillet over medium-heat. Cook chicken in the hot oil until browned, about 2 minutes per side. Add diced tomatoes with green chile peppers, pickles, vinegar, capers, and garlic to chicken; simmer until chicken is no longer pink in the center, about 10 minutes more.  Enjoy your meal!",
+      "ingredients": [
+        "½ cup all-purpose flour",
+        "½ teaspoon Creole seasoning",
+        "boneless, skinless chicken breast",
+        "olive oil",
+        "can diced tomatoes with green chile peppers",
+        "diced sweet pickles",
+        "red wine vinegar",
+        "drained capers"
+      ],
+      "id": "PK7JVKD"
+    },
+    {
+      "title": "Garlic Chicken Fried Brown Rice",
+      "cookingTime": "35 minutes",
+      "method": "Heat 1 tablespoon of vegetable oil in a large skillet set over medium heat. Add the chicken, bell pepper, green onion and garlic. Cook and stir until the chicken is cooked through, about 5 minutes. Remove the chicken to a plate and keep warm. Heat the remaining tablespoon of oil in the same skillet over medium-high heat. Add the rice; cook and stir to heat through. Stir in the soy sauce, rice vinegar and peas, and continue to cook for 1 minute. Return the chicken mixture to the skillet and stir to blend with the rice and heat through before serving. Enjoy your meal!",
+      "ingredients": [
+        "vegetable oil",
+        "½ red bell pepper",
+        "½ cup green onion",
+        "4 cloves garlic, minced",
+        "3 cups cooked brown rice",
+        "light soy sauce",
+        "rice vinegar",
+        "1 cup frozen peas"
+      ],
+      "id": "BIj0Tra"
+    },
+    {
+      "title": "Easy Pineapple Chicken Kabobs",
+      "cookingTime": "30 minutes",
+      "method": "Preheat an outdoor grill for medium-high heat and lightly oil the grate. Thread green bell pepper, onion, chicken, and pineapple onto skewers; brush with barbeque sauce. Cook on the preheated grill until chicken is no longer pink in the center and the juices run clear, 7 to 10 minutes per side. Enjoy your meal!",
+      "ingredients": [
+        "1 green bell pepper",
+        "½ onion",
+        "boneless chicken breast",
+        "1 (15 ounce) can pineapple chunks, drained",
+        "barbeque sauce",
+        "6 skewers"
+      ],
+      "id": "K2TlnhG"
+    },
+    {
+      "title": "Broccoli and Chicken Stir-Fry",
+      "cookingTime": "35 minutes",
+      "method": "Stir soy sauce, brown sugar, ginger, and red pepper flakes together in a bowl until sugar dissolves. Mix water and cornstarch together in a small bowl; stir with a whisk until cornstarch dissolves completely. Heat oil in a large skillet over high heat. Fry chicken and onion in hot oil until chicken is no longer pink in the center and onion is tender, 5 to 7 minutes. Stir in broccoli with chicken and onion; sauté until broccoli is hot, about 5 minutes. Push chicken and vegetable mixture to the side of the skillet. Pour soy sauce mixture into the vacant part of the skillet. Stir cornstarch slurry into soy sauce mixture until the color is consistent. Move chicken and vegetables back into the center of the pan; sauté until sauce thickens and coats chicken and vegetables, about 5 minutes more. Enjoy your meal!",
+      "ingredients": [
+        "soy sauce",
+        "¼ cup brown sugar",
+        "ground ginger",
+        "red pepper flakes",
+        "water",
+        "cornstarch",
+        "vegetable oil",
+        "boneless chicken breast",
+        "1 onion",
+        "broccoli florets"
+      ],
+      "id": "UdNw-hV"
+    },
+    {
+      "title": "Pineapple and Banana Smoothie",
+      "cookingTime": "3 minutes",
+      "method": "Place ice cubes, pineapple, banana, and pineapple juice into the container of a blender. Purée on high until smooth. Enjoy your meal!",
+      "ingredients": [
+        "¼ fresh pineapple",
+        "1 large banana",
+        "1 cup pineapple or apple juice"
+      ],
+      "id": "dJUz_Dm"
+    },
+    {
+      "title": "Almond Berry Smoothie",
+      "cookingTime": "10 minutes",
+      "method": "Combine blueberries, banana, almond milk, and almond butter in a blender; blend until smooth, adding water for a thinner smoothie. Enjoy your meal!",
+      "ingredients": [
+        "1 cup frozen blueberries",
+        "1 banana",
+        "½ cup almond milk",
+        "1 tablespoon almond butter",
+        "water as needed"
+      ],
+      "id": "-RLsZBx"
+    },
+    {
+      "title": "Tropical Sunshine Smoothie",
+      "cookingTime": "10 minutes",
+      "method": "Blend banana, orange juice, mango, pineapple, coconut water, lime juice, and mint in a blender until smooth. Enjoy your meal!",
+      "ingredients": [
+        "banana",
+        "½ cup orange juice",
+        "mango",
+        "pineapple",
+        "½ cup coconut water",
+        "½ teaspoon freshly squeezed lime juice",
+        "1 sprig fresh chocolate mint"
+      ],
+      "id": "7MLUzZx"
+    },
+    {
+      "title": "Mango Cherry Smoothie",
+      "cookingTime": "3 minutes",
+      "method": "Blend cherries, mango, water, and ice cubes in a blender until smooth. Enjoy your meal!",
+      "ingredients": [
+        "mango",
+        "cherries",
+        "water",
+        "ice cubes"
+      ],
+      "id": "zQaPlAT"
+    },
+    {
+      "title": "Protein Mango Smoothie",
+      "cookingTime": "5 minutes",
+      "method": "Blend mango, yogurt, almond milk, ice, protein powder, and honey together in a blender until smooth. Enjoy your meal!",
+      "ingredients": [
+        "½ mango",
+        "½ cup low-fat vanilla yogurt",
+        "½ cup almond milk",
+        "½ cup ice",
+        "1 scoop vanilla whey protein powder",
+        "1 teaspoon honey"
+      ],
+      "id": "RS5iP7Q"
+    },
+    {
+      "title": "Fruit and Yogurt Smoothie",
+      "cookingTime": "5 minutes",
+      "method": "Combine strawberries, banana, yogurt, pineapple juice, sugar, orange juice, and milk in a blender; blend until smooth. Enjoy your meal!",
+      "ingredients": [
+        "1 cup strawberries",
+        "1 banana",
+        "½ cup yogurt",
+        "¼ cup pineapple juice",
+        "1 ½ teaspoons white sugar",
+        "1 teaspoon orange juice",
+        "1 teaspoon milk"
+      ],
+      "id": "P1LiKd7"
+    }
+  ]
+}
