@@ -17,6 +17,7 @@ body {
 
 .App {
 	min-height: 100%;
+	padding: 0 0 2em 0;
 }
 
 h1,
@@ -25,16 +26,11 @@ h3,
 p {
 	margin: 0;
 }
+
 a {
 	text-decoration: none;
-	color: #333;
 	padding: 0.5em;
 	font-weight: 400;
-}
-
-a.active {
-	background-color: #333;
-	color: #fff;
 }
 
 button:hover {
@@ -66,17 +62,15 @@ textarea {
 }
 
 .navmenu {
-	background-color: #58249c;
 	color: #fff;
 }
 
 .navmenu a {
 	color: #fff;
-	background-color: #58249c;
 }
 
 .navmenu a.active {
-	color: #58249c;
+	color: #333;
 	background-color: #fff;
 	font-weight: bold;
 }
@@ -89,7 +83,6 @@ textarea {
 .home {
 	display: flex;
 	flex-wrap: wrap;
-	/* align-items: stretch; */
 	justify-content: space-around;
 }
 
@@ -114,8 +107,6 @@ textarea {
 }
 
 .card .card-title {
-	background-color: #58249c;
-
 	color: #fff;
 	margin: 0;
 	padding: 1em;
@@ -131,27 +122,6 @@ textarea {
 }
 .blockquote-footer {
 	margin: 0 1em;
-}
-
-.home .card .btn-div {
-	height: 10%;
-	justify-content: space-between;
-	width: 16em;
-	margin: 2rem auto;
-	padding: 0.5em;
-}
-
-.card .cook {
-	display: block;
-	width: 75%;
-	padding: 0.25em 0.5em;
-	background-color: #58249c;
-}
-
-.card .trash {
-	width: 20%;
-	background-color: #58249c;
-	color: white;
 }
 
 .card a {
@@ -180,11 +150,9 @@ textarea {
 }
 
 .recipe .card-title {
-	color: #58249c;
 	background-color: #fff;
 	font-size: 2em;
 	font-weight: bold;
-	box-shadow: 0 8px 6px -6px #58249c;
 	margin-bottom: 1em;
 }
 
@@ -193,25 +161,28 @@ textarea {
 }
 
 .recipe ul li {
-	list-style-image: url('./assets/food.png') !important;
+	list-style-image: url('./assets/food.svg') !important;
 	padding-inline-start: 5px;
 }
 
-.recipe .btn-div {
-	width: 40%;
-	justify-content: space-between;
-	margin: 1em auto;
-}
-.recipe .card button {
-	display: block;
+.btn-div {
 	width: 80%;
-	background-color: #58249c;
-	padding: 0.75em;
+	margin: 1em auto;
+	padding: 0;
 }
 
-.recipe .card .trash {
-	display: block;
-	width: 15%;
+.btn-div .row {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.btn-div button {
+	width: 100%;
+	margin: 0;
+	color: #fff;
 }
 
 .create {
@@ -220,20 +191,13 @@ textarea {
 }
 
 .create .card-title {
-	color: #58249c;
 	background-color: #fff;
 	font-size: 2em;
 	font-weight: bold;
-	box-shadow: 0 8px 6px -6px #58249c;
 	margin-bottom: 1em;
 }
 
-.create input {
-	border: 2px #58249c solid;
-}
-
 .create button {
-	background-color: #58249c;
 	color: #fff;
 	font-weight: 500;
 	padding: 0.5em 1em;
@@ -250,28 +214,86 @@ textarea {
 	width: 100%;
 }
 
-.trash {
-	display: block;
-	width: 20em;
-}
-
 .ingInput p {
 	padding: 0.2em 0;
 	width: 100%;
 }
 
 .ingInput input {
-	width: 70%;
+	width: 60%;
 }
 
 .ingInput button {
-	width: 25%;
+	width: 30%;
+	padding: 0.2em;
 }
 
 .search .search-title {
-	color: #58249c;
 	font-size: 2.5em;
 	font-weight: bold;
-	box-shadow: 0 8px 6px -6px #58249c;
-	/* margin-bottom: 1em; */
+}
+
+.theme-selector {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 0 1em;
+}
+.theme-buttons div {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-left: 15px;
+	border-radius: 50%;
+}
+
+.mode-toggle {
+	margin-right: auto;
+}
+.mode-toggle img {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+/* dark mode */
+.dark {
+	color: #e4e4e4;
+	background: #333;
+}
+
+.dark nav {
+	color: #e4e4e4 !important;
+	background: #666 !important;
+	box-shadow: 0 8px 6px -6px #e4e4e4 !important;
+}
+
+.dark .card,
+.dark .card .card-subtitle li,
+.dark .card .blockquote-footer {
+	color: #e4e4e4 !important;
+	background: #555 !important;
+}
+
+.dark .recipe .card-title,
+.dark .create .card-title,
+.dark .home .card-title {
+	color: #e4e4e4 !important;
+	background: #666 !important;
+	box-shadow: 0 8px 6px -6px #e4e4e4 !important;
+}
+
+.dark .search .search-title {
+	color: #e4e4e4 !important;
+
+	box-shadow: 0 8px 6px -6px #e4e4e4 !important;
+}
+
+.dark .card button {
+	color: #e4e4e4 !important;
+	background: #666 !important;
+	box-shadow: 0 8px 6px -6px #e4e4e4 !important;
 }

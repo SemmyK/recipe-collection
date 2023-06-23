@@ -1,19 +1,18 @@
 import { useParams } from 'react-router'
 import useFetch from '../hooks/useFetch'
-import { Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
-import { Link } from 'react-router-dom'
-import trash from '../assets/trash3.svg'
+import { useTheme } from '../hooks/useTheme'
+import ButtonBox from '../components/ButtonBox'
 
 function SingleRecipe() {
+	const { color } = useTheme()
 	const params = useParams()
 	const {
 		data: recipe,
 		loading,
 		error,
+		deleteData,
 	} = useFetch('http://localhost:3000/recipes/' + params.id)
-
-	const handleDelete = id => {}
 
 	return (
 		<article
@@ -28,7 +27,11 @@ function SingleRecipe() {
 				recipe && (
 					<Card style={{ textAlign: 'center', width: '80%' }}>
 						<Card.Body>
-							<Card.Title>{recipe.title}</Card.Title>
+							<Card.Title
+								style={{ color: color, boxShadow: ` 0 8px 6px -6px ${color}` }}
+							>
+								{recipe.title}
+							</Card.Title>
 							<p className='blockquote-footer' style={{ fontSize: '1.20em' }}>
 								{recipe.cookingTime} to make
 							</p>
@@ -41,12 +44,7 @@ function SingleRecipe() {
 									}}
 								>
 									{recipe.ingredients.map(ing => (
-										<li
-											style={{ listStyleImage: "url('../assets/food.svg')" }}
-											key={ing}
-										>
-											{ing}
-										</li>
+										<li key={ing}>{ing}</li>
 									))}
 								</ul>
 							</Card.Subtitle>
@@ -57,18 +55,17 @@ function SingleRecipe() {
 									))}
 								</ol>
 							</div>
-							<div className='d-flex btn-div'>
-								<Button variant='btn-outline-success'>
-									<Link to='/'>Go back</Link>
-								</Button>
-								<Button
-									variant='btn-outline-success'
-									className='trash'
-									onClick={() => handleDelete(recipe.id)}
-								>
-									<img src={trash} alt='delete icon' />
-								</Button>
-							</div>
+
+							<ButtonBox
+								width='70%'
+								btn='6'
+								del='2'
+								link='/'
+								text='Go back'
+								color={color}
+								deleteData={deleteData}
+								recipe={recipe}
+							/>
 						</Card.Body>
 					</Card>
 				)

@@ -12,13 +12,17 @@ import Create from './pages/Create'
 import Home from './pages/Home'
 import SearchResults from './pages/SearchResults'
 import SingleRecipe from './pages/SingleRecipe'
+import ThemeSelector from './components/ThemeSelector'
+import { useTheme } from './hooks/useTheme'
 
 function App() {
+	const { mode } = useTheme()
 	return (
 		<BrowserRouter>
-			<div className='App'>
+			<div className={`App ${mode}`}>
 				<header className='App-header'>
 					<NavMenu />
+					<ThemeSelector />
 				</header>
 				<main>
 					<Routes>

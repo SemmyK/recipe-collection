@@ -1,13 +1,15 @@
-import { Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
-import { Link } from 'react-router-dom'
-import trash from '../assets/trash3.svg'
+import { useTheme } from '../hooks/useTheme'
+import ButtonBox from './ButtonBox'
 
 function RecipeCard({ recipe, deleteData }) {
+	const { color } = useTheme()
 	return (
 		<Card style={{ height: '100%' }}>
 			<Card.Body>
-				<Card.Title className='text-center '>{recipe.title}</Card.Title>
+				<Card.Title className='text-center' style={{ background: color }}>
+					{recipe.title}
+				</Card.Title>
 				<Card.Subtitle className='mb-2 text-muted  '>
 					<ul
 						style={{
@@ -30,20 +32,13 @@ function RecipeCard({ recipe, deleteData }) {
 				<Card.Text>{recipe.method && recipe.method.slice(0, 100)}...</Card.Text>
 				<p className='blockquote-footer'>{recipe.cookingTime} to make.</p>
 			</Card.Body>
-			<div className='d-flex flex-wrap btn-div'>
-				<Button variant='btn-outline-success' className='cook'>
-					<Link to={`/recipes/${recipe.id}`}>Cook this</Link>
-				</Button>
-				<Button
-					variant='btn-outline-success'
-					className='trash'
-					onClick={() => {
-						deleteData(recipe.id)
-					}}
-				>
-					<img src={trash} alt='delete icon' />
-				</Button>
-			</div>
+			<ButtonBox
+				link={`/recipes/${recipe.id}`}
+				color={color}
+				deleteData={deleteData}
+				recipe={recipe}
+				text='Cook this'
+			/>
 		</Card>
 	)
 }

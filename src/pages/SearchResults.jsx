@@ -3,8 +3,10 @@ import useFetch from '../hooks/useFetch'
 import RecipeList from '../components/RecipeList'
 import { useEffect } from 'react'
 import { toast } from 'react-toastify'
+import { useTheme } from '../hooks/useTheme'
 
 function SearchResults() {
+	const { color } = useTheme()
 	const navigate = useNavigate()
 	const location = useLocation()
 	const searchTerm = location.search
@@ -18,7 +20,7 @@ function SearchResults() {
 
 	useEffect(() => {
 		if (recipes && recipes.length === 0) {
-			toast.error('No recipes to show')
+			toast.info('No recipes to show')
 			navigate('/')
 		}
 	}, [recipes, navigate])
@@ -30,7 +32,10 @@ function SearchResults() {
 
 			{recipes && recipes !== [] && (
 				<>
-					<p className='text-center search-title'>
+					<p
+						className='text-center search-title'
+						style={{ color: color, boxShadow: ` 0 8px 6px -6px ${color}` }}
+					>
 						Recipes including word "{query}"
 					</p>
 					<RecipeList recipes={recipes} />

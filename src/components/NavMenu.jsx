@@ -1,16 +1,23 @@
 import { Link, NavLink } from 'react-router-dom'
+//context
+import { useTheme } from '../hooks/useTheme'
 //bootstrap components
-
 import Container from 'react-bootstrap/Container'
-
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Offcanvas from 'react-bootstrap/Offcanvas'
+//components
 import Search from './Search'
 
 function NavMenu() {
+	const { color } = useTheme()
+
 	return (
-		<Navbar expand={'md'} className=' mb-3 navmenu'>
+		<Navbar
+			expand={'md'}
+			className=' mb-3 navmenu'
+			style={{ background: color }}
+		>
 			<Container fluid>
 				<Link to='/'>
 					<h1>Recipe Book</h1>

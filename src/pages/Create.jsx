@@ -4,8 +4,10 @@ import Form from 'react-bootstrap/Form'
 import { toast } from 'react-toastify'
 import useFetch from '../hooks/useFetch'
 import { useNavigate } from 'react-router-dom'
+import { useTheme } from '../hooks/useTheme'
 
 function Create() {
+	const { color } = useTheme()
 	const navigate = useNavigate()
 	const ingredientInput = useRef(null)
 	const [ingredient, setIngredient] = useState('')
@@ -66,7 +68,12 @@ function Create() {
 		<div className='create'>
 			<Card>
 				<Card.Body>
-					<Card.Title className='text-center'>Create Recipe Here</Card.Title>
+					<Card.Title
+						className='text-center'
+						style={{ color: color, boxShadow: ` 0 8px 6px -6px ${color}` }}
+					>
+						Create Recipe Here
+					</Card.Title>
 					<div className='card-text'>
 						<div>
 							<Form onSubmit={handleSubmit} className='create'>
@@ -80,6 +87,7 @@ function Create() {
 										value={newRecipe.title}
 										onChange={handleChange}
 										id='title'
+										style={{ borderColor: color }}
 										required
 									/>
 								</Form.Group>
@@ -88,14 +96,20 @@ function Create() {
 									className='mb-3 ingInput'
 									controlId='exampleForm.ControlInput1'
 								>
-									<Form.Label>Ingredients:</Form.Label>
+									<Form.Label>Ingredients (add one by one):</Form.Label>
 									<input
+										style={{ borderColor: color }}
 										ref={ingredientInput}
 										type='string'
 										value={ingredient}
 										onChange={e => setIngredient(e.target.value)}
 									/>
-									<Button onClick={handleAdd}>Add</Button>
+									<Button
+										onClick={handleAdd}
+										style={{ background: color, border: 'none' }}
+									>
+										Add
+									</Button>
 
 									<p>
 										{' '}
@@ -111,6 +125,7 @@ function Create() {
 								>
 									<Form.Label>Cooking Time (in minutes):</Form.Label>
 									<input
+										style={{ borderColor: color }}
 										required
 										type='number'
 										value={newRecipe.cookingTime}
@@ -128,7 +143,7 @@ function Create() {
 									</Form.Label>
 									<textarea
 										required
-										style={{ border: '2px #58249c solid' }}
+										style={{ border: `1px ${color} solid` }}
 										rows={3}
 										value={newRecipe.method}
 										onChange={handleChange}
@@ -139,6 +154,11 @@ function Create() {
 									className='mx-auto'
 									variant='outline-success'
 									type='submit'
+									style={{
+										background: color,
+										border: 'none',
+										padding: '0.75em 1.5em',
+									}}
 								>
 									{' '}
 									Add new recipe
