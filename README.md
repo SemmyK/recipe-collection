@@ -1,6 +1,6 @@
 # Recipe Book React App
 
-## Decription
+## Description
 
 ### Version 1
 
@@ -18,7 +18,7 @@ For version 1, after you download and unzip the repository, in the project direc
 
 To install node modules in the directory
 
-2. In same terminal run:
+2. In the same terminal run:
 
 ### `json-server --watch ./data/db.json`
 
